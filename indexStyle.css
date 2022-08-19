@@ -9,6 +9,29 @@ main{
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.colonne{
+    width: 100vw;
+}
+
+.col42G{
+    width: 78vw;
+    margin-left: 10.83%;
+    margin-right: 10.83%;
+}
+
+.col4{
+    width: 64.1vw;
+    margin-left: 8.9%;
+    margin-right: 8.9%;
+}
+
+.col2{
+    width: 28.9vw;
+    margin-left: 27.7%;
+    margin-right: 27.7%;
 }
 
 .testo{
@@ -27,6 +50,26 @@ body{
     color: red;
 }
 
+.whiteText{
+    color: #ffffff;
+}
+
+.whiteBG{
+    background-color: #d9d9d9;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.bottom{
+    bottom: 0px;
+}
+
 .grassetto{
     font-weight: 700;
 }
@@ -39,46 +82,74 @@ body{
     font-weight: 400;
 }
 
-header.flex{
+.header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.centrato{
-    padding-top: 11.88%;
-    padding-bottom: 3.75%;
-}
 
 .titolone{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    line-height: 27.6px;
+    font-size: 6.6vw;
+    line-height: 7.6vw;
+    margin-bottom: 3.75vh;
+    margin-top: 11.88vh;
 }
 
 .sottotitolo{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 5.5vw;
+    line-height: 6.39vw;
     color: rgba(255, 255, 255, 60%);
     text-align: center;
+    margin-bottom: 6.25vh;
 }
 
 .main{
-    padding-top: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .main-discalimer{
-    font-family: merriweather;
+    font-family: merriweather, serif;
     font-weight: 400;
-    line-height: 18.86px;
-    size: 15px;
+    line-height: 5.23vw;
+    size: 4.2vw;
     text-align: center;
+    margin-bottom: 4vh;
 }
 
 .bottonestart{
-    margin-top: 32px;
+    text-align: center;
+}
+
+main.flex.main div.col2:nth-child(2){
+    text-align: center;
+}
+
+.greyBG{
+    background-color: rgba(217, 217, 217, 50);
+}
+
+.buttondimension{
+    width: 28.9vw;
+    height: 3.75vh;
+}
+
+.button{
+    text-align: center;
+}
+
+footer.whiteBG p.final{
+    margin-left: 1.39vw;
+}
+
+footer.whiteBG ul li{
+    margin-left: 1.39vw;
+}
+
+ul{
+    list-style: none;
 }
