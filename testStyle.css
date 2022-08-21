@@ -59,19 +59,10 @@ body{
 }
 
 .croce{
-    top: 3.125vh;
-    left: 1.875vh;
-    transform: translateY(-50%);
-    transform: rotate(45deg);
-    height: 4px;
-    width: 20px;
-}
-
-.croce::after{
-    content: "";
-    background-color: #ff0000;
-    transform: rotateZ(90deg);
-    position: absolute;
-    height: 4px;
-    width: 20px;
+    top: 1.875vh;
+    left: 5.28vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0%);
+    color: white;
+    font-size: 8.33vw;
 }

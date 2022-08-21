@@ -8,12 +8,66 @@
     <link rel="stylesheet" href="CSS/testStyle.css">
 </head>
 <body>
-    <div>
+    <div class="back">
         <a href="Index.html">
-            <span class="croce whiteBG absolute">
-                &nbsp;
+            <span class="croce absolute">
+                &times;
             </span>
         </a>
     </div>
+
+    <form action="Risultato.html" method="post">
+        <div class="basicq">
+            <div class="colonne">
+                <div class="col4">
+                    <div class="dNumber">
+                        <label class="whiteText" for="Height">Inserisci la tua altezza (cm)</label>
+                        <input id="Height" type="number" name="Basic" placeholder="Inserisci la tua altezza">
+                    </div>
+        
+                    <div class="dnumber">
+                        <label class="whiteText" for="Weight">Inserisci il tuo peso (Kg)</label>
+                        <input type="number" name="Basic" id="Weight" placeholder="Inserisci il tuo peso">
+                    </div>
+                </div>
+        
+                <div class="col2">
+                    <div class="dtendina">
+                        <label class="whiteText" for="age">Inserisci la tua età</label>
+                        <select name="Basic" id="age">
+
+                            <option disabled selected>
+                                Inserisci la tua età
+                            </option>
+
+                            <option value="Lower">Lower</option>
+
+                            <option value="15">15</option>
+
+                            <option value="16">16</option>
+
+                            <option value="17">17</option>
+
+                            <option value="18">18</option>
+
+                            <option value="19">19</option>
+
+                            <option value="20">20</option>
+
+                            <option value="Higher">Higher</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mainq">
+            <div class="col4">
+                <div class="dtendina">
+    
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
