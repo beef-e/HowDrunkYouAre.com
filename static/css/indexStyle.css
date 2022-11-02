@@ -1,0 +1,206 @@
+/*header{
+    background-color: blueviolet;
+}
+
+main{
+    background-color: yellow;
+}*/
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.colonne {
+	width: 100vw;
+}
+
+.col42G {
+	width: 78vw;
+	margin-left: 10.83%;
+	margin-right: 10.83%;
+}
+
+.col4 {
+	width: 64.1vw;
+	margin-left: 8.9%;
+	margin-right: 8.9%;
+}
+
+.col2 {
+	width: 28.9vw;
+	margin-left: 27.7%;
+	margin-right: 27.7%;
+}
+
+.testo {
+	color: #fff;
+}
+
+body {
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: #1e1e1e;
+}
+
+.flex {
+	display: flex;
+}
+
+.color-red {
+	color: red;
+}
+
+.whiteText {
+	color: #ffffff;
+}
+
+.whiteBG {
+	background-color: #d9d9d9;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.bottom {
+	bottom: 0px;
+}
+
+.grassetto {
+	font-weight: 700;
+}
+
+.corsivo {
+	font-style: italic;
+}
+
+.sottile {
+	font-weight: 400;
+}
+
+.header {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.titolone {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 6.6vw;
+	line-height: 7.6vw;
+	margin-bottom: 3.75vh;
+	margin-top: 11.88vh;
+}
+
+.sottotitolo {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 5.5vw;
+	line-height: 6.39vw;
+	color: rgba(255, 255, 255, 60%);
+	text-align: center;
+	margin-bottom: 6.25vh;
+}
+
+.main {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-discalimer {
+	font-family: merriweather, serif;
+	font-weight: 400;
+	line-height: 5.23vw;
+	font-size: 4.2vw;
+	text-align: center;
+	margin-bottom: 4vh;
+}
+
+.bottonestart {
+	text-align: center;
+}
+
+main.flex.main div.col2:nth-child(2) {
+	text-align: center;
+}
+
+.greyBG {
+	background-color: rgba(217, 217, 217, 50);
+}
+
+.buttondimension {
+	width: 28.9vw;
+	height: 3.75vh;
+}
+
+.button {
+	text-align: center;
+}
+
+footer.whiteBG p.final {
+	margin-left: 1.39vw;
+}
+
+footer.whiteBG ul li {
+	margin-left: 1.39vw;
+}
+
+ul {
+	list-style: none;
+}
+
+/*TODO FARE STILE TESTO FOOTER*/
+
+@media screen and (min-width: 1220px) {
+	.titolone {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 4.88vw;
+		line-height: 7.6vw;
+		margin-bottom: 3.75vh;
+		margin-top: 6.99vh;
+	}
+
+	.sottotitolo {
+		font-family: "Times New Roman", Times, serif;
+		font-size: 2.62vw;
+		line-height: 7.3vh;
+		color: rgba(255, 255, 255, 60%);
+		text-align: center;
+		margin-bottom: 6.25vh;
+	}
+
+	.main-discalimer {
+		line-height: 2.1vw;
+		font-size: 1.63vw;
+		margin-bottom: 8vh;
+	}
+
+	.buttondimension {
+		width: 32.9vw;
+		height: 8.75vh;
+		font-size: 1.62vw;
+	}
+
+	.col2:hover {
+		margin-left: 24.7%;
+		transition: ease-in-out 210ms;
+	}
+
+	button.greyBG.buttondimension.button:hover {
+		color: red;
+		background-color: blue;
+		font-family: Oswald, Arial, "sans-serif";
+		width: 35.5vw;
+		height: 10vh;
+		font-size: 2vw;
+		transition: ease-in-out 210ms;
+	}
+}
