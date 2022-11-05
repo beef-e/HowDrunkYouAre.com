@@ -1,68 +1,118 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-.colonne{
-    width: 100vw;
+.colonne {
+	width: 100vw;
 }
 
-.col42G{
-    width: 78vw;
-    margin-left: 10.83%;
-    margin-right: 10.83%;
+a {
+	text-decoration: none;
 }
 
-.col4{
-    width: 64.1vw;
-    margin-left: 8.9%;
-    margin-right: 8.9%;
+.col42G {
+	width: 78vw;
+	margin-left: 10.83%;
+	margin-right: 10.83%;
 }
 
-.col2{
-    width: 28.9vw;
-    margin-left: 27.7%;
-    margin-right: 27.7%;
+.col4 {
+	width: 64.1vw;
+	margin-left: 8.9%;
+	margin-right: 8.9%;
 }
 
-.testo{
-    color: #fff;
+.col2 {
+	width: 28.9vw;
+	margin-left: 27.7%;
+	margin-right: 27.7%;
 }
 
-body{
-    background-color: #1e1e1e;
+.testo {
+	color: #fff;
 }
 
-.flex{
-    display: flex;
+body {
+	background-color: #1e1e1e;
 }
 
-.color-red{
-    color: red;
+.flex {
+	display: flex;
 }
 
-.whiteText{
-    color: #ffffff;
+.color-red {
+	color: red;
 }
 
-.whiteBG{
-    background-color: #d9d9d9;
+.whiteText {
+	color: #ffffff;
 }
 
-.absolute{
-    position: absolute;
+.grassetto {
+	font-weight: 700;
 }
 
-.relative{
-    position: relative;
+.corsivo {
+	font-style: italic;
 }
 
-.croce{
-    top: 1.875vh;
-    left: 5.28vw;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0%);
-    color: white;
-    font-size: 8.33vw;
+.titolo {
+	font-family: Arial, Helvetica, sans-serif;
+	flex-basis: 50%;
+	flex-grow: 2;
+	text-align: center;
+	font-size: 1.95vw;
+}
+
+#mainTitle span:hover {
+	color: rgb(0, 0, 220);
+	transition: ease 150ms;
+}
+
+.whiteBG {
+	background-color: #d9d9d9;
+}
+
+.coverFixed {
+	width: 100vw;
+	height: 19.63906581740977vh;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.fixed {
+	position: fixed;
+}
+
+header.flex {
+	align-items: center;
+	width: 100vw;
+	top: 0;
+}
+
+.back {
+	/*flex-basis: 4.883%;*/
+	flex-basis: 7.813%;
+}
+
+.croce {
+	top: 1.875vh;
+	left: 5.28vw;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0%);
+	color: white;
+	font-size: 8.33vw;
+}
+
+.croce:hover {
+	color: #d9d9d9;
+	transition: ease-in 150ms;
 }
