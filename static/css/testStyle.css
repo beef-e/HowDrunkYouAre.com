@@ -96,11 +96,13 @@ header.flex {
 	align-items: center;
 	width: 100vw;
 	top: 0;
+	height: 19.63906581740977vh;
 }
 
 .back {
 	/*flex-basis: 4.883%;*/
 	flex-basis: 7.813%;
+	text-align: center;
 }
 
 .croce {
@@ -115,4 +117,60 @@ header.flex {
 .croce:hover {
 	color: #d9d9d9;
 	transition: ease-in 150ms;
+}
+
+.buttonDimension {
+	width: 28.9vw;
+	height: 5.75vh;
+}
+
+button.buttonDimension.whiteBG.bottoneInvio {
+	border-radius: 20px;
+	font-size: 1.302vw;
+}
+
+button.buttonDimension.whiteBG.bottoneInvio:hover {
+	color: red;
+	width: 33vw;
+	height: 7vh;
+	font-size: 1.802vw;
+	transition: ease-in-out 210ms;
+}
+
+.col2.divbottone:hover {
+	margin-left: 24.7%;
+	transition: ease-in-out 210ms;
+}
+
+.col2.divbottone {
+	margin-top: 5vh;
+	width: fit-content;
+}
+
+.dNumber {
+	text-align: center;
+}
+
+.dtendina {
+	text-align: center;
+}
+
+.dradio {
+	text-align: center;
+	flex-direction: column;
+	margin-top: 2.65vh;
+}
+
+.dradio span {
+	text-decoration: none;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-size: 2.788vh;
+	line-height: normal;
+}
+
+.wrapRadioQuestion {
+	width: fit-content;
+	margin: 0 auto;
+	margin-top: 1.328vh;
 }
