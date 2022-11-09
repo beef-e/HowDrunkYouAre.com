@@ -18,9 +18,10 @@
 
 		<header class="flex fixed">
 			<!--*SISTEMATA-->
-			<div class="back">
+			<div class="back absolute">
 				<a href="Index.html">
-					<span class="croce"> &times; </span>
+					<div class="croce"></div>
+					<!--<span class="croce"> &times; </span>-->
 				</a>
 			</div>
 			<div class="color-red titolo grassetto corsivo">
@@ -108,7 +109,7 @@
 								<div class="col2">
 									<span class="whiteText">Ricordi quanto hai bevuto?</span>
 
-									<div class="wrapRadioQuestion">
+									<div class="wrapRadioQuestion flex">
 										<input
 											type="radio"
 											name="remembersDrinking"
@@ -119,7 +120,7 @@
 											>Sì, ricordo quanto ho bevuto</label
 										>
 									</div>
-									<div class="wrapRadioQuestion">
+									<div class="wrapRadioQuestion flex">
 										<input
 											type="radio"
 											name="remembersDrinking"
@@ -131,19 +132,31 @@
 										>
 									</div>
 								</div>
-
-								<div class="col2 divbottone">
-									<button
-										type="submit"
-										class="whiteBG bottoneInvio buttonDimension">
-										Invia le risposte
-									</button>
-								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="colonne">
+				<div class="col42G">
+					<div class="col4">
+						<div class="col2 divbottone">
+							<button
+								type="submit"
+								class="whiteBG bottoneInvio buttonDimension">
+								Invia le risposte
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--<div
+				class="wrapLongLink absolute bottomLeft"
+				style="background-color: yellowgreen">
+				<a href="">Suggerisci una nuova domanda</a>
+			</div>-->
 		</form>
 	</body>
 </html>

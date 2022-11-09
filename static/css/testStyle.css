@@ -30,10 +30,6 @@ a {
 	margin-right: 27.7%;
 }
 
-.testo {
-	color: #fff;
-}
-
 body {
 	background-color: #1e1e1e;
 }
@@ -47,7 +43,7 @@ body {
 }
 
 .whiteText {
-	color: #ffffff;
+	color: #fff;
 }
 
 .grassetto {
@@ -84,6 +80,11 @@ body {
 	position: absolute;
 }
 
+.bottomLeft {
+	bottom: 1.9904vh;
+	left: 1.7276vw;
+}
+
 .relative {
 	position: relative;
 }
@@ -92,26 +93,60 @@ body {
 	position: fixed;
 }
 
+div.basicq .col4 :nth-child(2) {
+	margin-top: 0.398vh;
+	margin-bottom: 0.398vh;
+}
+
 header.flex {
 	align-items: center;
 	width: 100vw;
 	top: 0;
 	height: 19.63906581740977vh;
+	background-color: #1e1e1e;
 }
 
 .back {
 	/*flex-basis: 4.883%;*/
 	flex-basis: 7.813%;
 	text-align: center;
+	width: 2.6041vw;
+	left: 2.34375vw;
 }
 
 .croce {
-	top: 1.875vh;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	border-radius: 6px;
+
+	/*top: 1.875vh;
 	left: 5.28vw;
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0%);
 	color: white;
-	font-size: 8.33vw;
+	font-size: 8.33vw;*/
+}
+
+.croce::after,
+.croce::before {
+	content: "";
+	position: absolute;
+	width: 36px;
+	height: 4px;
+	background-color: white;
+	border-radius: 2px;
+	top: 16px;
+}
+
+.croce::after {
+	transform: rotate(-45deg);
+	right: 2px;
+}
+
+.croce::before {
+	transform: rotate(45deg);
+	left: 2px;
 }
 
 .croce:hover {
@@ -170,7 +205,8 @@ button.buttonDimension.whiteBG.bottoneInvio:hover {
 }
 
 .wrapRadioQuestion {
-	width: fit-content;
-	margin: 0 auto;
+	/*width: fit-content;*/
+	margin-left: 7.023vw;
 	margin-top: 1.328vh;
+	justify-content: flex-start;
 }
