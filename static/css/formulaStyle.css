@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
@@ -130,4 +132,34 @@ header.flex {
 .croce::before {
 	transform: rotate(45deg);
 	left: 2px;
+}
+
+span.Minititle {
+	text-decoration: none;
+	font-size: 1.953vw;
+}
+
+section.mainText {
+	margin-top: 5.307vh;
+	font-size: 2.654vh;
+	line-height: 3.052vh;
+}
+
+.col2.centerAligned {
+	margin-top: 2.654vh;
+}
+
+div.formulaBg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: gray;
+	margin: 3.317vh auto;
+	text-align: center;
+	height: 12vh;
+}
+
+span.formula {
+	font-size: 1.702vw;
+	font-family: "Abhaya Libre", "Times New Roman", Times, serif;
 }
