@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
 	padding: 0;
@@ -11,7 +13,7 @@ body {
 }
 
 .colonne {
-	width: 100vw;
+	width: 100%;
 }
 
 a {
@@ -19,7 +21,7 @@ a {
 }
 
 .col42G {
-	width: 78vw;
+	width: 78%;
 	margin-left: 10.83%;
 	margin-right: 10.83%;
 }
@@ -78,7 +80,7 @@ a {
 }
 
 .coverFixed {
-	width: 100vw;
+	width: 100%;
 	height: 19.63906581740977vh;
 }
 
@@ -115,7 +117,7 @@ header.flex {
 
 .croce::after,
 .croce::before {
-	content: "";
+	content: '';
 	position: absolute;
 	width: 36px;
 	height: 4px;
@@ -137,12 +139,14 @@ header.flex {
 span.Minititle {
 	text-decoration: none;
 	font-size: 1.953vw;
+	font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section.mainText {
 	margin-top: 5.307vh;
 	font-size: 2.654vh;
-	line-height: 3.052vh;
+	line-height: 1.4;
+	font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
 }
 
 .col2.centerAligned {
@@ -161,5 +165,5 @@ div.formulaBg {
 
 span.formula {
 	font-size: 1.702vw;
-	font-family: "Abhaya Libre", "Times New Roman", Times, serif;
+	font-family: 'Abhaya Libre', 'Times New Roman', Times, serif;
 }
