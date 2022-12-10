@@ -130,7 +130,7 @@ header.flex {
 
 .croce::after,
 .croce::before {
-	content: "";
+	content: '';
 	position: absolute;
 	width: 36px;
 	height: 4px;
@@ -198,7 +198,7 @@ button.buttonDimension.whiteBG.bottoneInvio:hover {
 
 .dradio span {
 	text-decoration: none;
-	font-family: "Times New Roman", Times, serif;
+	font-family: 'Times New Roman', Times, serif;
 	font-weight: normal;
 	font-size: 2.788vh;
 	line-height: normal;
@@ -209,4 +209,12 @@ button.buttonDimension.whiteBG.bottoneInvio:hover {
 	margin-left: 7.023vw;
 	margin-top: 1.328vh;
 	justify-content: flex-start;
+}
+
+div.mainq .dnumber {
+	margin-top: 6px;
+}
+
+.mainq .dtendina {
+	margin-top: 45px;
 }

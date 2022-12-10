@@ -84,7 +84,23 @@ body {
 .indice a:hover {
 	color: rgb(157, 157, 157);
 	/*text-decoration: underline;*/
-	transition: 1s ease-in-out;
+	transition: 0.7s ease-in-out;
+}
+
+ul.indice li a::after {
+	content: '';
+	background-color: #d9d9d9;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 1%;
+	transition: ease-in-out 0.7s;
+}
+
+ul.indice li a:hover::after {
+	background-color: rgb(157, 157, 157);
+	width: 100%;
 }
 
 ul.indice {
@@ -211,19 +227,3 @@ footer {
 	margin-bottom: 1px;
 }
 */
-
-ul.indice li a::after {
-	content: '';
-	background-color: #d9d9d9;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 0%;
-	height: 1%;
-	transition: ease-in-out 1s;
-}
-
-ul.indice li a:hover::after {
-	background-color: rgb(157, 157, 157);
-	width: 100%;
-}

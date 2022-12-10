@@ -92,6 +92,26 @@
 
 										<option value="20">20</option>
 
+										<option value="21">21</option>
+
+										<option value="22">22</option>
+
+										<option value="23">23</option>
+
+										<option value="24">24</option>
+
+										<option value="25">25</option>
+
+										<option value="26">26</option>
+
+										<option value="27">27</option>
+
+										<option value="28">28</option>
+
+										<option value="29">29</option>
+
+										<option value="30">30</option>
+
 										<option value="Higher">Higher</option>
 									</select>
 								</div>
@@ -113,7 +133,8 @@
 										<input
 											type="radio"
 											name="remembersDrinking"
-											id="yesOpt" />
+											id="yesOpt"
+											value="true" />
 										<label
 											for="yesOpt"
 											class="whiteText"
@@ -124,12 +145,75 @@
 										<input
 											type="radio"
 											name="remembersDrinking"
-											id="noOpt" />
+											id="noOpt"
+											value="false" />
 										<label
 											for="noOpt"
 											class="whiteText"
 											>No, non ricordo quanto ho bevuto</label
 										>
+									</div>
+
+									<div class="dtendina">
+										<label
+											for="whatDrinked"
+											class="whiteText"
+											>Cosa hai bevuto?</label
+										>
+
+										<select
+											name="whatDrinked"
+											id="whatDrinked">
+											<option
+												disabled
+												selected>
+												Seleziona cosa hai bevuto
+											</option>
+
+											<optgroup label="Lisci">
+												<option value="">Birra</option>
+												<option value="">Vodka</option>
+												<option value="">Gin</option>
+												<option value="">Rum</option>
+												<option value="">Prosecco</option>
+											</optgroup>
+
+											<optgroup label="Cocktail">
+												<option value="">Americano</option>
+												<option value="">Angelo Azzurro</option>
+												<option value="">Black Russian</option>
+												<option value="">Bloody Mary</option>
+												<option value="">Capirinha</option>
+												<option value="">Cosmopolitan</option>
+												<option value="">Cuba Libre</option>
+												<option value="">Gin Lemon</option>
+												<option value="">Gin Tonic</option>
+												<option value="">Long Island</option>
+												<option value="">Mai Tai</option>
+												<option value="">Manhattan</option>
+												<option value="">Margarita</option>
+												<option value="">Mojito</option>
+												<option value="">Moscow Mule</option>
+												<option value="">Negroni</option>
+												<option value="">Negroni Sbagliato</option>
+												<option value="">Pina Colada</option>
+												<option value="">Sex on the Beach</option>
+												<option value="">Vodka Lemon</option>
+												<option value="">Vodka Martini</option>
+											</optgroup>
+										</select>
+									</div>
+
+									<div class="dnumber">
+										<label
+											class="whiteText"
+											for="nVshots"
+											>Quanti Shottini hai bevuto?</label
+										>
+										<input
+											id="nVshots"
+											type="number"
+											name="numerodishottini" />
 									</div>
 								</div>
 							</div>
@@ -145,7 +229,7 @@
 							<button
 								type="submit"
 								class="whiteBG bottoneInvio buttonDimension">
-								Invia le risposte
+								Quanto sei ubriaco?
 							</button>
 						</div>
 					</div>
@@ -158,5 +242,7 @@
 				<a href="">Suggerisci una nuova domanda</a>
 			</div>-->
 		</form>
+
+		<script src="static/js/test.js"></script>
 	</body>
 </html>
