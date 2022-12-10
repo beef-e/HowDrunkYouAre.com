@@ -6,8 +6,8 @@ main{
     background-color: yellow;
 }*/
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
 	padding: 0;
@@ -57,7 +57,7 @@ body {
 }
 
 .whiteBG {
-	background-color: #cdcccc;
+	background-color: #989898;
 }
 
 .absolute {
@@ -99,7 +99,7 @@ body {
 }
 
 .sottotitolo {
-	font-family: "Times New Roman", Times, serif;
+	font-family: 'Times New Roman', Times, serif;
 	font-size: 5.5vw;
 	line-height: 6.39vw;
 	/*color: rgba(255, 255, 255, 60%);*/
@@ -186,7 +186,7 @@ p.final1 a:visited {
 	}
 
 	.sottotitolo {
-		font-family: "Times New Roman", Times, serif;
+		font-family: 'Times New Roman', Times, serif;
 		font-size: 2.62vw;
 		line-height: 7.3vh;
 		/*color: rgba(255, 255, 255, 60%);*/
@@ -214,16 +214,12 @@ p.final1 a:visited {
 	button.greyBG.buttondimension.button:hover {
 		color: rgba(255, 0, 0, 60);
 		background-color: #1e1e1e;
-		font-family: Oswald, Arial, "sans-serif";
+		font-family: Oswald, Arial, 'sans-serif';
 		border-radius: 30px;
 		width: 35.5vw;
 		height: 10vh;
 		font-size: 2vw;
 		transition: ease-in-out 210ms;
-	}
-
-	footer.whiteBG.absolute.bottom.colonne {
-		min-height: 18.5vh;
 	}
 
 	.final1 {
@@ -232,6 +228,7 @@ p.final1 a:visited {
 
 	.final2 {
 		margin-top: 0vh;
+		margin-bottom: 5px;
 	}
 
 	ol li {
