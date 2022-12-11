@@ -10,15 +10,19 @@ let alcoolConstant = 0.73;
 let timeInSeconds;
 let bloodAlcool;
 
-let selectedAnswer;
+/*let selectedAnswer;
 
 firstQuestionAnswer = document.getElementsByName['remembersDrinking'];
+
+firstQuestionAnswer.addEventListener('checked', function (e) {
+	selectedAnswer = firstQuestionAnswer.checked.value;
+});
 
 for (let i = 0; i < 2; i++) {
 	if (firstQuestionAnswer[i].checked) {
 		selectedAnswer = firstQuestionAnswer.value;
 	}
-}
+}*/
 
 /*firstQuestionAnswer.addEventListener('input', function (e) {
 	console.log(typeof firstQuestion, firstQuestion);

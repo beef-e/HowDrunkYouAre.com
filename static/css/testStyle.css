@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
 	padding: 0;
 	margin: 0;
@@ -217,4 +219,8 @@ div.mainq .dnumber {
 
 .mainq .dtendina {
 	margin-top: 45px;
+}
+
+.colonne * {
+	font-family: 'Inter', sans-serif;
 }
