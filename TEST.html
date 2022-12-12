@@ -128,8 +128,8 @@
 				<div class="colonne">
 					<div class="col42G">
 						<div class="col4">
-							<div class="dradio flex">
-								<div class="col2">
+							<div class="col2">
+								<div class="dradio flex">
 									<span class="whiteText">Ricordi quanto hai bevuto?</span>
 
 									<div class="wrapRadioQuestion flex">
@@ -158,71 +158,84 @@
 											>No, non ricordo quanto ho bevuto</label
 										>
 									</div>
+								</div>
 
-									<div class="dtendina">
-										<label
-											for="whatDrinked"
-											class="whiteText"
-											>Cosa hai bevuto?</label
-										>
+								<div class="dtendina">
+									<label
+										for="whatDrinked"
+										class="whiteText"
+										>Cosa hai bevuto?</label
+									>
 
-										<select
-											name="whatDrinked"
-											id="whatDrinked">
-											<option
-												disabled
-												selected>
-												Seleziona cosa hai bevuto
-											</option>
+									<select
+										name="whatDrinked"
+										id="whatDrinked">
+										<option
+											disabled
+											selected>
+											Seleziona cosa hai bevuto
+										</option>
 
-											<optgroup label="Lisci">
-												<option value="4.7">Birra</option>
-												<option value="39.5">Vodka</option>
-												<option value="40">Gin</option>
-												<option value="40">Rum</option>
-												<option value="10.5">Prosecco</option>
-											</optgroup>
+										<optgroup label="Lisci">
+											<option value="4.7">Birra</option>
+											<option value="39.5">Vodka</option>
+											<option value="40">Gin</option>
+											<option value="40">Rum</option>
+											<option value="10.5">Prosecco</option>
+										</optgroup>
 
-											<optgroup label="Cocktail">
-												<option value="16">Americano</option>
-												<option value="35">Angelo Azzurro</option>
-												<option value="27">Black Russian</option>
-												<option value="13.5">Bloody Mary</option>
-												<option value="25">Capirinha</option>
-												<option value="25">Cosmopolitan</option>
-												<option value="13.3">Cuba Libre</option>
-												<option value="20">Gin Lemon</option>
-												<option value="17">Gin Tonic</option>
-												<option value="28">Long Island</option>
-												<option value="28">Mai Tai</option>
-												<option value="26.9">Manhattan</option>
-												<option value="25.4">Margarita</option>
-												<option value="16">Mojito</option>
-												<option value="12">Moscow Mule</option>
-												<option value="28">Negroni</option>
-												<option value="15">Negroni Sbagliato</option>
-												<option value="13">Pina Colada</option>
-												<option value="32">Quattro Bianchi</option>
-												<option value="15.7">Sex on the Beach</option>
-												<option value="36.8">Vodka Lemon</option>
-												<option value="29.7">Vodka Martini</option>
-											</optgroup>
-										</select>
-									</div>
+										<optgroup label="Cocktail">
+											<option value="16">Americano</option>
+											<option value="35">Angelo Azzurro</option>
+											<option value="27">Black Russian</option>
+											<option value="13.5">Bloody Mary</option>
+											<option value="25">Capirinha</option>
+											<option value="25">Cosmopolitan</option>
+											<option value="13.3">Cuba Libre</option>
+											<option value="20">Gin Lemon</option>
+											<option value="17">Gin Tonic</option>
+											<option value="28">Long Island</option>
+											<option value="28">Mai Tai</option>
+											<option value="26.9">Manhattan</option>
+											<option value="25.4">Margarita</option>
+											<option value="16">Mojito</option>
+											<option value="12">Moscow Mule</option>
+											<option value="28">Negroni</option>
+											<option value="15">Negroni Sbagliato</option>
+											<option value="13">Pina Colada</option>
+											<option value="32">Quattro Bianchi</option>
+											<option value="15.7">Sex on the Beach</option>
+											<option value="36.8">Vodka Lemon</option>
+											<option value="29.7">Vodka Martini</option>
+										</optgroup>
+									</select>
+								</div>
 
-									<!--IN CASO DI VODKA LISCIA-->
-									<div class="dnumber">
-										<label
-											class="whiteText"
-											for="nVshots"
-											>Quanto ne hai bevuto?</label
-										>
+								<!--IN CASO DI VODKA LISCIA-->
+								<div class="dnumber">
+									<label
+										class="whiteText"
+										for="nVshots"
+										>Quanto ne hai bevuto?</label
+									>
+									<input
+										required
+										id="nVshots"
+										type="number"
+										name="numerodishottini" />
+								</div>
+
+								<div class="switchDiv flex">
+									<span class="pre-checkbox whiteText"> Shottino </span>
+									<label class="switch">
 										<input
-											required
-											id="nVshots"
-											type="number"
-											name="numerodishottini" />
-									</div>
+											type="checkbox"
+											name="ShotOrGlass"
+											id="GlassSwitch" />
+
+										<span class="slider-round"></span>
+									</label>
+									<span class="post-checkbox whiteText"> Bicchiere </span>
 								</div>
 							</div>
 						</div>
