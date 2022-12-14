@@ -28,6 +28,24 @@ for (let i = 0; i < 2; i++) {
 	console.log(typeof firstQuestion, firstQuestion);
 });*/
 
+function shotInOnz(params) {
+	let millilitri;
+	millilitri = vShot * 30;
+	millilitri = millilitri / 29.57;
+	return millilitri;
+}
+
+function glassInOnz(params) {}
+
+function shotFormula(params) {
+	consumedAlcool = shotInOnz;
+	bloodAlcool =
+		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
+		0.015 * timeInSeconds;
+}
+
+function glassFormula(params) {}
+
 bloodAlcool =
 	((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
 	0.015 * timeInSeconds;

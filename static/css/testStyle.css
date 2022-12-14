@@ -213,7 +213,7 @@ button.buttonDimension.whiteBG.bottoneInvio:hover {
 	justify-content: flex-start;
 }
 
-div.mainq .dnumber {
+div.mainq .dNumber {
 	margin-top: 6px;
 }
 
@@ -227,7 +227,7 @@ div.mainq .dnumber {
 
 .switchDiv {
 	margin-top: 6px;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -263,7 +263,7 @@ div.mainq .dnumber {
 	height: 20px;
 	width: 20px;
 	left: 1.15px;
-	bottom: 2.8px;
+	bottom: 2.4px;
 	background-color: white;
 	/*-webkit-transition: 0.4s;*/
 	transition: 0.4s;
@@ -282,4 +282,9 @@ div.mainq .dnumber {
 	/*-webkit-transform: translateX(20px);
 	-ms-transform: translateX(20px);*/
 	transform: translateX(18.85px);
+}
+
+.pre-checkbox,
+.post-checkbox {
+	margin: 0 10px;
 }
