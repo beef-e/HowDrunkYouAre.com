@@ -42,9 +42,16 @@ function shotFormula(params) {
 	bloodAlcool =
 		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
 		0.015 * timeInSeconds;
+	console.log(bloodAlcool);
 }
 
-function glassFormula(params) {}
+function glassFormula(params) {
+	consumedAlcool = glassInOnz;
+	bloodAlcool =
+		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
+		0.015 * timeInSeconds;
+	console.log(bloodAlcool);
+}
 
 bloodAlcool =
 	((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -

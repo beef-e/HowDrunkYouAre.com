@@ -3,7 +3,9 @@ form = document.querySelector('#form');
 form.addEventListener('submit', function (e) {
 	e.preventDefault();
 	if (glassType.checked) {
+		glassFormula();
 	} else {
+		shotFormula();
 	}
 });
 

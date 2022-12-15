@@ -288,3 +288,40 @@ div.mainq .dNumber {
 .post-checkbox {
 	margin: 0 10px;
 }
+
+.dNumber input,
+.dtendina select {
+	background-color: #3e3e3e;
+	border-radius: 4px;
+	border: 0.1px solid rgba(243, 33, 33, 30%);
+	text-align: center;
+}
+
+.dNumber input:focus-visible,
+.dtendina select:focus-visible {
+	outline-color: rgba(243, 33, 33, 40%);
+	outline-offset: 0;
+	outline-width: 1px;
+	outline-style: double;
+	border: 0.1px solid rgba(243, 33, 33, 30%);
+}
+
+.dtendina select::-webkit-scrollbar {
+	display: none;
+}
+
+.dNumber input[type='number']::-webkit-outer-spin-button,
+.dNumber input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.dtendina select optgroup {
+	color: red;
+	text-align: left;
+}
+
+.dtendina option {
+	color: #fff;
+	text-align: center;
+}
