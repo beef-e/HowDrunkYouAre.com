@@ -15,6 +15,7 @@ ageQuestion = document.querySelector('#age');
 whatDrinkedQuestion = document.querySelector('#whatDrinked');
 nVshotQuestion = document.querySelector('#nVshots');
 glassType = document.querySelector('#GlassSwitch');
+usedTime = document.querySelector('#usedTime');
 
 weightQuestion.addEventListener('input', function (e) {
 	e.preventDefault();
@@ -38,15 +39,15 @@ whatDrinkedQuestion.addEventListener('input', function (e) {
 	e.preventDefault();
 	alcoolPercent = parseFloat(whatDrinkedQuestion.value);
 	alcoolPercent = alcoolPercent / 100;
-	whatDrinkedQuestion = $(whatDrinkedQuestion).find('option:selected');
+	//*whatDrinkedQuestion = $(whatDrinkedQuestion).find('option:selected');
 	//whatDrinkedQuestion = whatDrinkedQuestion.find('option:selected');
-	if (whatDrinkedQuestion.classList.contains('Bicchiere')) {
-		/*
+	//*if (whatDrinkedQuestion.classList.contains('Bicchiere')) {
+	/*
 		TODO: COME FACCIO A CONTROLLARE LA CLASSE DELLA OPTION^^^^
 		*/
-		console.log('checked');
-		glassType.checked = true;
-	}
+	//*console.log('checked');
+	//*glassType.checked = true;
+	//*}
 	console.log(typeof alcoolPercent, alcoolPercent);
 });
 
@@ -57,6 +58,11 @@ nVshotQuestion.addEventListener('input', function (e) {
 });
 
 /*
-TODO FIGURE OUT COME CAMBIARE LA FORMULA DELLA QUANTITA DI ALCOL IN BASE AL BICCHIERE SELEZIONATO
+|| TODO FIGURE OUT COME CAMBIARE LA FORMULA DELLA QUANTITA DI ALCOL IN BASE AL BICCHIERE SELEZIONATO
 TODO FIGURE OUT FUNZIONAMENTO RADIO BUTTON INPUT
  */
+usedTime.addEventListener('input', function (e) {
+	e.preventDefault();
+	minuteConverter(usedTime.value);
+	console.log(typeof timeInSeconds, timeInSeconds);
+});

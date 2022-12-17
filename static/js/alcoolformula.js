@@ -28,31 +28,52 @@ for (let i = 0; i < 2; i++) {
 	console.log(typeof firstQuestion, firstQuestion);
 });*/
 
-function shotInOnz(params) {
+function shotInOnz() {
 	let millilitri;
 	millilitri = vShot * 30;
 	millilitri = millilitri / 29.57;
 	return millilitri;
 }
 
-function glassInOnz(params) {}
+function glassInOnz() {}
 
-function shotFormula(params) {
-	consumedAlcool = shotInOnz;
+function moleInGrams() {
+	let millimoliLitro = bloodAlcool;
+	let moliLitro = millimoliLitro / 1000;
+	let grammiLitro = moliLitro * 88.148;
+	//bloodAlcool = bloodAlcool / 1000;
+	//bloodAlcool = bloodAlcool * 88.148;
+	return grammiLitro;
+}
+
+function shotFormula() {
+	consumedAlcool = shotInOnz();
+	weight = weight * 2.2046;
 	bloodAlcool =
 		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
 		0.015 * timeInSeconds;
+	//||console.log('millimoli/litro  ', bloodAlcool); //*Contenuto alcool espresso in millimoli/litro
+	bloodAlcool = moleInGrams(); //*Conversion contenuto alcool da millimoli/litro a grammi/litro
 	console.log(bloodAlcool);
+	//||console.log('grammi/litro ', bloodAlcool);
 }
 
-function glassFormula(params) {
-	consumedAlcool = glassInOnz;
+function glassFormula() {
+	consumedAlcool = glassInOnz();
+	weight = weight * 2.2046;
 	bloodAlcool =
 		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
 		0.015 * timeInSeconds;
-	console.log(bloodAlcool);
+	//||console.log('millimoli/litro  ', bloodAlcool); //*Contenuto alcool espresso in millimoli/litro
+	bloodAlcool = moleInGrams(); //*Conversion contenuto alcool da millimoli/litro a grammi/litro
+	//||console.log('grammi/litro ', bloodAlcool);
 }
 
-bloodAlcool =
+function minuteConverter(minuti) {
+	timeInSeconds = minuti * 60;
+}
+
+/*bloodAlcool =
 	((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
 	0.015 * timeInSeconds;
+*/
