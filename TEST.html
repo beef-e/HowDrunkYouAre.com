@@ -121,17 +121,7 @@
 										<option value="40">Higher</option>
 									</select>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<div class="mainq">
-				<div class="colonne">
-					<div class="col42G">
-						<div class="col4">
-							<div class="col2">
 								<div class="dradio flex">
 									<span class="whiteText">Ricordi quanto hai bevuto?</span>
 
@@ -141,7 +131,8 @@
 											type="radio"
 											name="remembersDrinking"
 											id="yesOpt"
-											value="true" />
+											value="true"
+											onclick="check()" />
 										<label
 											for="yesOpt"
 											class="whiteText"
@@ -154,7 +145,8 @@
 											type="radio"
 											name="remembersDrinking"
 											id="noOpt"
-											value="false" />
+											value="false"
+											onclick="check()" />
 										<label
 											for="noOpt"
 											class="whiteText"
@@ -162,7 +154,31 @@
 										>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<div
+				class="mainqNotRemembers"
+				id="notRemembers">
+				<div class="colonne">
+					<div class="col42G">
+						<div class="col4">
+							<div class="col2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="mainqRemembers hidden"
+				id="remembersWhatDrinked">
+				<div class="colonne">
+					<div class="col42G">
+						<div class="col4">
+							<div class="col2">
 								<div class="dtendina">
 									<label
 										for="whatDrinked"

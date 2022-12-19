@@ -192,7 +192,7 @@ button.buttonDimension.whiteBG.bottoneInvio:hover {
 	text-align: center;
 }
 
-.dradio {
+.basicq .col2 div.dradio {
 	text-align: center;
 	flex-direction: column;
 	margin-top: 2.65vh;
@@ -206,18 +206,18 @@ button.buttonDimension.whiteBG.bottoneInvio:hover {
 	line-height: normal;
 }
 
-.wrapRadioQuestion {
+div.dradio.flex div.wrapRadioQuestion {
 	/*width: fit-content;*/
 	margin-left: 7.023vw;
 	margin-top: 1.328vh;
 	justify-content: flex-start;
 }
 
-div.mainq .dNumber {
+div.mainqRemembers .dNumber {
 	margin-top: 6px;
 }
 
-.mainq .dtendina {
+.mainqRemembers .dtendina {
 	margin-top: 45px;
 }
 
@@ -324,4 +324,8 @@ div.mainq .dNumber {
 .dtendina option {
 	color: #fff;
 	text-align: center;
+}
+
+.hidden {
+	display: none;
 }

@@ -13,6 +13,7 @@ weightQuestion = document.querySelector('#Weight');
 heightQuestion = document.querySelector('#Height');
 ageQuestion = document.querySelector('#age');
 whatDrinkedQuestion = document.querySelector('#whatDrinked');
+var remembersDrinking = document.getElementsByName('remembersDrinking');
 nVshotQuestion = document.querySelector('#nVshots');
 glassType = document.querySelector('#GlassSwitch');
 usedTime = document.querySelector('#usedTime');
@@ -34,6 +35,21 @@ ageQuestion.addEventListener('input', function (e) {
 	age = parseFloat(ageQuestion.value);
 	console.log(typeof age, age);
 });
+
+function check() {
+	//check di un radiobutton
+	for (let i = 0; i < remembersDrinking.length; i++) {
+		if (remembersDrinking[i].checked) {
+			if (i == 0) {
+				console.log('remembersDrinking');
+				document.getElementById('remembersWhatDrinked').classList.remove('hidden');
+			} else {
+				console.log("doesn't remeber");
+				document.getElementById('remembersWhatDrinked').classList.add('hidden');
+			}
+		}
+	}
+}
 
 whatDrinkedQuestion.addEventListener('input', function (e) {
 	e.preventDefault();
