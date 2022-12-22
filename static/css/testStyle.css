@@ -64,11 +64,6 @@ body {
 	font-size: 1.95vw;
 }
 
-#mainTitle span:hover {
-	color: rgb(0, 0, 220);
-	transition: ease 150ms;
-}
-
 .whiteBG {
 	background-color: #d9d9d9;
 }
@@ -117,6 +112,16 @@ header.flex {
 }
 
 .croce {
+	position: relative;
+	height: 2.6041vw; /* this can be anything */
+	width: 2.6041vw; /* ...but maintain 1:1 aspect ratio */
+	display: flex;
+	min-width: 30px;
+	min-height: 30px;
+	flex-direction: column;
+	justify-content: center;
+
+	/*
 	width: 40px;
 	height: 40px;
 	position: relative;
@@ -132,23 +137,33 @@ header.flex {
 
 .croce::after,
 .croce::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 0.2604vw; /* cross thickness */
+	min-height: 2px;
+	max-height: 4px;
+	background-color: white;
+	border-radius: 2px;
+
+	/*
 	content: '';
 	position: absolute;
 	width: 36px;
 	height: 4px;
 	background-color: white;
 	border-radius: 2px;
-	top: 16px;
+	top: 16px;*/
 }
 
 .croce::after {
 	transform: rotate(-45deg);
-	right: 2px;
+	/*right: 2px;*/
 }
 
 .croce::before {
 	transform: rotate(45deg);
-	left: 2px;
+	/*left: 2px;*/
 }
 
 .croce:hover {
@@ -164,19 +179,6 @@ header.flex {
 button.buttonDimension.whiteBG.bottoneInvio {
 	border-radius: 20px;
 	font-size: 1.302vw;
-}
-
-button.buttonDimension.whiteBG.bottoneInvio:hover {
-	color: red;
-	width: 33vw;
-	height: 7vh;
-	font-size: 1.802vw;
-	transition: ease-in-out 210ms;
-}
-
-.col2.divbottone:hover {
-	margin-left: 24.7%;
-	transition: ease-in-out 210ms;
 }
 
 .col2.divbottone {
@@ -328,4 +330,90 @@ div.mainqRemembers .dNumber {
 
 .hidden {
 	display: none;
+}
+
+@media screen and (min-width: 1024px) {
+	#mainTitle span:hover {
+		color: rgb(0, 0, 220);
+		transition: ease 150ms;
+	}
+
+	button.buttonDimension.whiteBG.bottoneInvio:hover {
+		color: red;
+		width: 33vw;
+		height: 7vh;
+		font-size: 1.802vw;
+		transition: ease-in-out 210ms;
+	}
+
+	.col2.divbottone:hover {
+		margin-left: 24.7%;
+		transition: ease-in-out 210ms;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	h1 {
+		font-size: 25px;
+	}
+
+	.col2 {
+		width: 100%;
+		margin: 0;
+	}
+
+	.col2.divbottone {
+		width: 100%;
+		text-align: center;
+		margin-top: 8vh;
+	}
+
+	div.basicq .col4 > div:nth-child(2) {
+		margin-top: 1.898vh;
+		margin-bottom: 1.898vh;
+	}
+
+	.dNumber input,
+	.dtendina select {
+		width: 100%;
+	}
+
+	div.dradio.flex div.wrapRadioQuestion {
+		margin-left: 0;
+		margin-top: 2vh;
+	}
+
+	.basicq .col2 div.dradio {
+		margin-top: 7vh;
+	}
+
+	.buttonDimension {
+		width: 46vw;
+		height: 6.5vh;
+	}
+
+	button.buttonDimension.whiteBG.bottoneInvio {
+		font-size: 4.3vw;
+		border-radius: 17px;
+	}
+
+	.switch {
+		width: 42px;
+	}
+
+	.pre-checkbox,
+	.post-checkbox {
+		margin: 0 5px;
+	}
+
+	div.mainqRemembers .dNumber,
+	.switchDiv {
+		margin-top: 1.898vh;
+	}
+
+	label[for='usedTime'] {
+		width: 100%;
+		font-size: 16px;
+		letter-spacing: -0.2px; /*!DA RIVEDERE*/
+	}
 }

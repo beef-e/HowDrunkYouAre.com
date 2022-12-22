@@ -30,7 +30,7 @@
 		</header>
 
 		<form
-			action="Risultato.html"
+			action="risultato.html"
 			method="post"
 			id="form">
 			<div class="basicq">
@@ -77,7 +77,8 @@
 									<select
 										class="whiteText"
 										name="Basic"
-										id="age">
+										id="age"
+										required>
 										<option
 											disabled
 											selected>
@@ -189,7 +190,8 @@
 									<select
 										class="whiteText"
 										name="whatDrinked"
-										id="whatDrinked">
+										id="whatDrinked"
+										required>
 										<option
 											disabled
 											selected>
@@ -347,8 +349,7 @@
 										>Quanto ne hai bevuto?</label
 									>
 									<input
-										class="whiteText"
-										required
+										class="whiteText requiredRemembers"
 										id="nVshots"
 										type="number"
 										name="numerodishottini" />
@@ -375,7 +376,7 @@
 									</label>
 
 									<input
-										class="whiteText"
+										class="whiteText requiredRemembers"
 										type="number"
 										name="usedTime"
 										id="usedTime" />

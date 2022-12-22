@@ -14,6 +14,7 @@ heightQuestion = document.querySelector('#Height');
 ageQuestion = document.querySelector('#age');
 whatDrinkedQuestion = document.querySelector('#whatDrinked');
 var remembersDrinking = document.getElementsByName('remembersDrinking');
+var requiredRemembers = document.getElementsByClassName('requiredRemembers');
 nVshotQuestion = document.querySelector('#nVshots');
 glassType = document.querySelector('#GlassSwitch');
 usedTime = document.querySelector('#usedTime');
@@ -43,9 +44,15 @@ function check() {
 			if (i == 0) {
 				console.log('remembersDrinking');
 				document.getElementById('remembersWhatDrinked').classList.remove('hidden');
+				for (let j = 0; j < requiredRemembers.length; j++) {
+					requiredRemembers[j].required = true;
+				}
 			} else {
 				console.log("doesn't remeber");
 				document.getElementById('remembersWhatDrinked').classList.add('hidden');
+				for (let j = 0; j < requiredRemembers.length; j++) {
+					requiredRemembers[j].required = false;
+				}
 			}
 		}
 	}
