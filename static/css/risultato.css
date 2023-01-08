@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,36 +8,40 @@
 }
 
 .colonne {
-	width: 100vw;
+	width: 100%;
 }
 
 .col42G {
-	width: 78vw;
+	width: 78%;
 	margin-left: 10.83%;
 	margin-right: 10.83%;
 }
 
 .col4 {
-	width: 64.1vw;
+	width: 64.1%;
 	margin-left: 8.9%;
 	margin-right: 8.9%;
 }
 
 .col2 {
-	width: 28.9vw;
+	width: 28.9%;
 	margin-left: 27.7%;
 	margin-right: 27.7%;
 	transition: ease-in-out 210ms;
 }
 
 body {
-	min-width: 100vw;
-	min-height: 100vh;
+	/*min-width: 100vw;
+	min-height: 100vh;*/
 	background-color: #1e1e1e;
 }
 
 .flex {
 	display: flex;
+}
+
+.centerAligned {
+	text-align: center;
 }
 
 .color-red {
@@ -43,6 +50,14 @@ body {
 
 .whiteText {
 	color: #d9d9d9;
+}
+
+.greyText {
+	color: #a4a4a4;
+}
+
+.darkText {
+	color: #959595;
 }
 
 .whiteBG {
@@ -71,4 +86,40 @@ body {
 
 .sottile {
 	font-weight: 400;
+}
+
+.hidden {
+	display: none;
+}
+
+.firstResult,
+.secondResult,
+.thirdResult {
+	flex-direction: column;
+	align-items: center;
+}
+
+.mainTitle {
+	margin-top: 243px;
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 8vw;
+}
+
+.underTitle {
+	margin-top: 20px;
+	font-family: Merriweather, 'Times New Roman', Times, serif;
+	font-style: italic;
+	font-size: 3.2vw;
+	/*line-height: 6.39vw;*/
+}
+
+.message {
+	font-family: Merriweather, 'Times New Roman', Times, serif;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.messageDiv {
+	margin: 40px 370px 0px 370px;
 }
