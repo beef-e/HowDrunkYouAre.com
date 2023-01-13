@@ -9,6 +9,12 @@ let firstQuestionAnswer;
 let alcoolConstant = 0.73;
 let timeInSeconds;
 let bloodAlcool;
+let checkPoint1; //=;	//*Sotto questo=sobrio
+let checkPoint2; //=;	//*Sotto questo=allegro
+
+/*
+!STABILIRE I CHECKPOINTS PER OGNI STADIO
+*/
 
 /*let selectedAnswer;
 
