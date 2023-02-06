@@ -6,7 +6,7 @@ form.addEventListener('submit', function (e) {
 		glassFormula();
 	} else {
 		shotFormula();
-		indirizzaRisultatoScienza();
+		//indirizzaRisultatoScienza();
 	}
 });
 
@@ -90,7 +90,8 @@ TODO FIGURE OUT FUNZIONAMENTO RADIO BUTTON INPUT
  */
 usedTime.addEventListener('input', function (e) {
 	e.preventDefault();
-	minuteConverter(usedTime.value);
+	let minuti = usedTime.value;
+	minuteConverter(minuti);
 	//console.log(typeof timeInSeconds, timeInSeconds);
 });
 

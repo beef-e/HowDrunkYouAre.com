@@ -37,11 +37,16 @@ for (let i = 0; i < 2; i++) {
 function shotInOnz() {
 	let millilitri;
 	millilitri = vShot * 30;
-	millilitri = millilitri / 29.57;
+	millilitri = millilitri / 29.57; //*Conversione in once
 	return millilitri;
 }
 
-function glassInOnz() {}
+function glassInOnz() {
+	let millilitri;
+	millilitri = vShot * 400;
+	millilitri = millilitri / 29.57; //*Conversione in once
+	return millilitri;
+}
 
 function moleInGrams() {
 	let millimoliLitro = bloodAlcool;
@@ -54,24 +59,33 @@ function moleInGrams() {
 
 function shotFormula() {
 	consumedAlcool = shotInOnz();
-	weight = weight * 2.2046;
+	weight = weight * 2.2046; //*Conversione da chilogrammi a libbre
 	bloodAlcool =
 		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
 		0.015 * timeInSeconds;
 	//||console.log('millimoli/litro  ', bloodAlcool); //*Contenuto alcool espresso in millimoli/litro
 	bloodAlcool = moleInGrams(); //*Conversion contenuto alcool da millimoli/litro a grammi/litro
+
+	if (bloodAlcool < 0) {
+		bloodAlcool = 0;
+	}
 	console.log(bloodAlcool);
 	//||console.log('grammi/litro ', bloodAlcool);
 }
 
 function glassFormula() {
 	consumedAlcool = glassInOnz();
-	weight = weight * 2.2046;
+	weight = weight * 2.2046; //*Conversione da chilogrammi a libbre
 	bloodAlcool =
 		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
 		0.015 * timeInSeconds;
 	//||console.log('millimoli/litro  ', bloodAlcool); //*Contenuto alcool espresso in millimoli/litro
 	bloodAlcool = moleInGrams(); //*Conversion contenuto alcool da millimoli/litro a grammi/litro
+
+	if (bloodAlcool < 0) {
+		bloodAlcool = 0;
+	}
+	console.log(bloodAlcool);
 	//||console.log('grammi/litro ', bloodAlcool);
 }
 
