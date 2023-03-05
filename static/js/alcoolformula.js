@@ -1,16 +1,17 @@
 //*CALCOLO DELLA COSTANTE DI ALCOL NEL MASCHIO
 let consumedAlcool;
-let vShot;
-let alcoolPercent;
-let weight;
+//let vShot;
+//let alcoolPercent;
+//let weight;
 let height;
+let bicchiere = false;
 let age;
 let firstQuestionAnswer;
 let alcoolConstant = 0.73;
 let timeInSeconds;
-let bloodAlcool;
-let checkPoint1; //=;	//*Sotto questo=sobrio
-let checkPoint2; //=;	//*Sotto questo=allegro
+//let bloodAlcool;
+let breakPoint1 = 0.5; //*Sotto questo=sobrio
+let breakPoint2 = 0.8; //*Sotto questo=allegro
 
 /*
 !STABILIRE I CHECKPOINTS PER OGNI STADIO
@@ -61,15 +62,15 @@ function shotFormula() {
 	consumedAlcool = shotInOnz();
 	weight = weight * 2.2046; //*Conversione da chilogrammi a libbre
 	bloodAlcool =
-		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
-		0.015 * timeInSeconds;
+		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 - 0.015 * usedTime;
 	//||console.log('millimoli/litro  ', bloodAlcool); //*Contenuto alcool espresso in millimoli/litro
 	bloodAlcool = moleInGrams(); //*Conversion contenuto alcool da millimoli/litro a grammi/litro
 
-	if (bloodAlcool < 0) {
+	/*if (bloodAlcool < 0) {
 		bloodAlcool = 0;
-	}
-	console.log(bloodAlcool);
+	}*/
+	console.log(typeof bloodAlcool, bloodAlcool);
+	return bloodAlcool;
 	//||console.log('grammi/litro ', bloodAlcool);
 }
 
@@ -77,23 +78,18 @@ function glassFormula() {
 	consumedAlcool = glassInOnz();
 	weight = weight * 2.2046; //*Conversione da chilogrammi a libbre
 	bloodAlcool =
-		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
-		0.015 * timeInSeconds;
+		((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 - 0.015 * usedTime;
 	//||console.log('millimoli/litro  ', bloodAlcool); //*Contenuto alcool espresso in millimoli/litro
 	bloodAlcool = moleInGrams(); //*Conversion contenuto alcool da millimoli/litro a grammi/litro
 
 	if (bloodAlcool < 0) {
 		bloodAlcool = 0;
 	}
-	console.log(bloodAlcool);
+	console.log(typeof bloodAlcool, bloodAlcool);
+	return bloodAlcool;
 	//||console.log('grammi/litro ', bloodAlcool);
 }
 
 function minuteConverter(minuti) {
 	timeInSeconds = minuti * 60;
 }
-
-/*bloodAlcool =
-	((consumedAlcool * alcoolPercent * 5.14) / (weight * alcoolConstant)) * 100 -
-	0.015 * timeInSeconds;
-*/

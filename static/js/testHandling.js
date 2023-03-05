@@ -1,13 +1,14 @@
 form = document.querySelector('#form');
 
 form.addEventListener('submit', function (e) {
-	e.preventDefault();
+	//e.preventDefault();
 	if (glassType.checked) {
-		glassFormula();
-	} else {
-		shotFormula();
-		//indirizzaRisultatoScienza();
-	}
+		bicchiere = true;
+		//bloodAlcool = glassFormula();
+	} /*else {
+		//bloodAlcool = shotFormula();
+	}*/
+	//indirizzaRisultatoScienza();
 });
 
 weightQuestion = document.querySelector('#Weight');
@@ -19,9 +20,6 @@ var requiredRemembers = document.getElementsByClassName('requiredRemembers');
 nVshotQuestion = document.querySelector('#nVshots');
 glassType = document.querySelector('#GlassSwitch');
 usedTime = document.querySelector('#usedTime');
-soberResult = document.querySelector('#firstResult');
-happyResult = document.querySelector('#secondResult');
-drunkResult = document.querySelector('#thirdResult');
 
 weightQuestion.addEventListener('input', function (e) {
 	e.preventDefault();
@@ -99,7 +97,7 @@ usedTime.addEventListener('input', function (e) {
  *Individuazione del contenuto di alcool nel sangue e relativo indirizzamento al giusto risultato
  */
 
-function indirizzaRisultatoScienza() {
+/*function indirizzaRisultatoScienza(bloodAlcool) {
 	switch (bloodAlcool) {
 		case bloodAlcool < breakPoint1:
 			soberResult.classList.toggle('.hidden');
@@ -113,4 +111,4 @@ function indirizzaRisultatoScienza() {
 			drunkResult.classList.toggle('.hidden');
 			break;
 	}
-}
+}*/
